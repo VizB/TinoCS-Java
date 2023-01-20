@@ -67,14 +67,22 @@ public class P5_AcharBhargav_Vismay_Cat{
     }
     
     public void printDescription(){
-        System.out.println(catName + " is a " + catAge + " year old " + domesticatedStatus() 
-                            + " " + ageDescription() + " weighing " + catWeight + " pounds");
+        System.out.print(catName + " is a " + catAge + " year old " + domesticatedStatus() + " " + ageDescription());
+        if(ageDescription().equals("adult") || ageDescription().equals("juvenile")){
+            System.out.print(" cat");
+        }
+        System.out.println(" weighing " + catWeight + " pounds");
     }
     
     public void feed(double amount){
         catHunger -= amount;
         if(catHunger <= 0){
             isDomesticated = true;
+            catHunger = 0;
+        }
+        
+        if(catHunger >= 1){
+            catHunger = 1;
         }
     }
     
@@ -94,8 +102,8 @@ public class P5_AcharBhargav_Vismay_Cat{
             System.out.println("Feed me meow!");
         } else if(isDomesticated && catHunger < 0.5){
             System.out.println(catName + " pounces on the toy!");
-        } else {
-            System.out.println(catName + " swats lazily at the toy");
+        } else if(isDomesticated) {
+            System.out.println(catName + " swats lazily at the toy.");
         }
         
         if(catHunger < 1){
