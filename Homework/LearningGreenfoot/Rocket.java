@@ -14,6 +14,6 @@ public class Rocket extends Actor
      */
     public void act()
     {
-        setLocation(getX() + 3, getY());
+        // Add your action code here.
     }
 }
