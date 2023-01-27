@@ -1,5 +1,6 @@
 #Greenfoot project file
 class.Banana.image=bananas.png
+class.BananaWorld.image=space1.jpg
 class.Bat.image=bat_01.png
 dependency1.from=BananaWorld
 dependency1.to=Bat
@@ -10,10 +11,10 @@ dependency2.type=UsesDependency
 dependency3.from=Banana
 dependency3.to=Bat
 dependency3.type=UsesDependency
-editor.fx.0.height=754
-editor.fx.0.width=1382
-editor.fx.0.x=-8
-editor.fx.0.y=-8
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
 height=585
 package.numDependencies=3
 package.numTargets=3
