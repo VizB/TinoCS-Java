@@ -14,16 +14,10 @@ dependency3.type=UsesDependency
 dependency4.from=Brick
 dependency4.to=Ball
 dependency4.type=UsesDependency
-<<<<<<< HEAD
-editor.fx.0.height=0
-editor.fx.0.width=0
-editor.fx.0.x=0
-=======
-editor.fx.0.height=739
-editor.fx.0.width=816
-editor.fx.0.x=275
->>>>>>> 42623c5f65483481f25d16feb171ceca91624543
-editor.fx.0.y=0
+editor.fx.0.height=989
+editor.fx.0.width=1483
+editor.fx.0.x=872
+editor.fx.0.y=218
 height=659
 package.numDependencies=4
 package.numTargets=3
