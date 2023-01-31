@@ -67,7 +67,7 @@ public class Pedestrian extends Actor{
     
     public void updateImage(){
         setImage("ppl" + colorState + ".png");
-        GreenfootImage healthText = new GreenfootImage(health + "", 2 * getImage().getWidth()/3, Color.WHITE, (Color)null);
+        GreenfootImage healthText = new GreenfootImage(health + "", 2 * getImage().getWidth()/3, Color.WHITE, null);
         getImage().drawImage(healthText, getImage().getWidth()/2 - healthText.getWidth()/2, getImage().getWidth()/2 - healthText.getHeight() / 2);
     }
     
