@@ -9,7 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     Player player;
-    public static boolean gameState = true;
+    public boolean gameState;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -18,6 +18,7 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1);
+        gameState = true;
         player = new Player();
         addObject(player, getWidth()/2, getHeight()/2);
     }
@@ -28,7 +29,6 @@ public class MyWorld extends World
                 Food food = new Food();
                 addObject(food, Greenfoot.getRandomNumber(getWidth() - food.getImage().getWidth()) + food.getImage().getWidth()/2, Greenfoot.getRandomNumber(getHeight() - food.getImage().getHeight())+food.getImage().getHeight()/2);
             }
-            
             if(Greenfoot.isKeyDown("Left") && (player.getX() - player.getImage().getWidth() / 2 > 0)){
                 player.setLocation(player.getX() - 3, player.getY());
             }
@@ -42,13 +42,15 @@ public class MyWorld extends World
                 player.setLocation(player.getX(), player.getY() + 3);
             }
         } else {
-            gameOver();
             GameOver g = new GameOver();
             addObject(g, getWidth()/2, getHeight()/2);
         }
     }
+    public boolean getGameState(){
+        return gameState;
+    }
     
-    public static void gameOver(){
-        gameState = false;
+    public void setGameState(boolean isTrue){
+        gameState = isTrue;
     }
 }

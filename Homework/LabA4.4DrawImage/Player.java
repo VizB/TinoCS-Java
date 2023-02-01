@@ -62,7 +62,8 @@ public class Player extends Actor{
             }
             
         } else {
-            MyWorld.gameOver();
+            MyWorld world = (MyWorld) (getWorld());
+            world.setGameState(false);
         }
     }
 }

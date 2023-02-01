@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Food extends Actor
+public class Food extends Actor 
 {
     int regen = 0;
     public Food(){
@@ -26,7 +26,7 @@ public class Food extends Actor
     public int getFoodRegen(){
         return regen;
     }
-    
+
     /**
      * Act - do whatever the Food wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
