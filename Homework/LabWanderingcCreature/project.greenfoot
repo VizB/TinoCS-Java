@@ -1,5 +1,4 @@
 #Greenfoot project file
-class.Creature.image=zombie.png
 class.Treat.image=Coin.png
 class.Wall.image=wallTile.png
 dependency1.from=MyWorld
@@ -23,11 +22,19 @@ dependency6.type=UsesDependency
 dependency7.from=Treat
 dependency7.to=Creature
 dependency7.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=1399
 editor.fx.0.width=1717
 editor.fx.0.x=-7
 editor.fx.0.y=0
 height=1399
+=======
+editor.fx.0.height=0
+editor.fx.0.width=0
+editor.fx.0.x=0
+editor.fx.0.y=0
+height=743
+>>>>>>> d033f4b842c4aaabd6f6e85b3c7dcbabc66db49d
 package.numDependencies=7
 package.numTargets=4
 project.charset=UTF-8
@@ -75,5 +82,10 @@ target4.y=0
 version=3.0.0
 width=867
 world.lastInstantiated=MyWorld
+<<<<<<< HEAD
 xPosition=1700
 yPosition=0
+=======
+xPosition=0
+yPosition=2
+>>>>>>> d033f4b842c4aaabd6f6e85b3c7dcbabc66db49d
